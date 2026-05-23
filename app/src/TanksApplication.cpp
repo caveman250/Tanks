@@ -1,15 +1,15 @@
-#include "TemplateApplication.h"
+#include "TanksApplication.h"
 #include "generated/Classes.generated.h"
 #include "generated/Systems.generated.h"
 
 namespace app
 {
-    TemplateApplication* TemplateApplication::GetTemplateApplication()
+    TanksApplication* TanksApplication::GetTemplateApplication()
     {
-        return static_cast<TemplateApplication*>(Get());
+        return static_cast<TanksApplication*>(Get());
     }
 
-    void TemplateApplication::Init()
+    void TanksApplication::Init()
     {
         Application::Init();
         se::app_InitClassReflection();

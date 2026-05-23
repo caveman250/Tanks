@@ -7,7 +7,7 @@ include(include/Spark)
 ###### Includes ######
 include_directories(src)
 
-setup_spark_target(TemplateProject false ${CMAKE_CURRENT_SOURCE_DIR}/unity.conf)
+setup_spark_target(Tanks false ${CMAKE_CURRENT_SOURCE_DIR}/unity.conf)
 
-#target_compile_options(TemplateProject PUBLIC -fsanitize=address)
-#target_link_options(TemplateProject PUBLIC -fsanitize=address)
+#target_compile_options(Tanks PUBLIC -fsanitize=address)
+#target_link_options(Tanks PUBLIC -fsanitize=address)

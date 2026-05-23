@@ -13,10 +13,10 @@ namespace app
     struct Node;
     struct OtherComp;
 
-    class TemplateApplication : public se::Application
+    class TanksApplication : public se::Application
     {
     public:
-        static TemplateApplication* GetTemplateApplication();
+        static TanksApplication* GetTemplateApplication();
 
         void Init() override;
     };

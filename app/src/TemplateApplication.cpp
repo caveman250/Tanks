@@ -1,4 +1,4 @@
-#include "TestApplication.h"
+#include "TemplateApplication.h"
 #include "generated/Classes.generated.h"
 #include "generated/Systems.generated.h"
 

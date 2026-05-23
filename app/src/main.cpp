@@ -3,7 +3,7 @@
 #include <iostream>
 #include <platform/PlatformRunLoop.h>
 
-#include "TestApplication.h"
+#include "TemplateApplication.h"
 #include "engine/Application.h"
 
 int main(int, char*[])

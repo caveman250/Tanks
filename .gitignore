@@ -1,0 +1,15 @@
+projects/*
+.vs/*
+app/built
+app/save
+app/temp
+.idea/workspace.xml
+*.generated.h
+*.generated.cpp
+*.generated.mm
+*.unity.cpp
+*.unity.mm
+/.idea/QtSettings.xml
+/.idea/SparkTestProject.iml
+/.idea/Spark.iml
+.DS_Store

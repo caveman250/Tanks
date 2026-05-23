@@ -1,0 +1,795 @@
+{
+    "structs": [
+        {
+            "SceneSaveData": {
+                "m_Entities": "Array",
+                "m_SourcePath": "String"
+            }
+        },
+        {
+            "SceneEntityData": {
+                "children": "Array",
+                "components": "PolymorphicArray",
+                "entity": "Uint64",
+                "flags": "Int32",
+                "name": "String"
+            }
+        },
+        {
+            "uint64_t": {
+                "val": "Uint64"
+            }
+        },
+        {
+            "Internal_ArrayItem": {
+                "offset": "Uint32",
+                "valid": "bool"
+            }
+        },
+        {
+            "RootComponent": null
+        },
+        {
+            "TransformComponent": {
+                "pos": "Object",
+                "rot": "Object",
+                "scale": "Object"
+            }
+        },
+        {
+            "Vec3": {
+                "x": "Float",
+                "y": "Float",
+                "z": "Float"
+            }
+        },
+        {
+            "FirstPersonCameraComponent": null
+        },
+        {
+            "PointLightComponent": {
+                "color": "Object"
+            }
+        },
+        {
+            "MeshComponent": {
+                "materialAsset": "Object",
+                "materialInstanceAsset": "Object",
+                "model": "Object",
+                "renderLayer": "Int32",
+                "visible": "bool"
+            }
+        },
+        {
+            "AssetReference<Model>": {
+                "m_AssetPath": "String"
+            }
+        },
+        {
+            "AssetReference<Material>": {
+                "m_AssetPath": "String"
+            }
+        },
+        {
+            "AssetReference<MaterialInstance>": {
+                "m_AssetPath": "String"
+            }
+        },
+        {
+            "ParentComponent": null
+        },
+        {
+            "RespondsToTestButtonComponent": null
+        },
+        {
+            "MouseInputComponent": {
+                "buttonMask": "Int32",
+                "receivesScrollEvents": "bool",
+                "stateMask": "Int32"
+            }
+        },
+        {
+            "WidgetComponent": {
+                "updateEnabled": "bool",
+                "visibility": "String"
+            }
+        },
+        {
+            "RectTransformComponent": {
+                "anchors": "Object",
+                "maxAspectRatio": "Float",
+                "maxHeight": "Float",
+                "maxWidth": "Float",
+                "maxX": "Float",
+                "maxY": "Float",
+                "minAspectRatio": "Float",
+                "minHeight": "Float",
+                "minWidth": "Float",
+                "minX": "Float",
+                "minY": "Float"
+            }
+        },
+        {
+            "Anchors": {
+                "bottom": "Float",
+                "left": "Float",
+                "right": "Float",
+                "top": "Float"
+            }
+        },
+        {
+            "ImageComponent": {
+                "texture": "Object"
+            }
+        },
+        {
+            "AssetReference<Texture>": {
+                "m_AssetPath": "String"
+            }
+        },
+        {
+            "ButtonComponent": {
+                "hoveredImage": "Object",
+                "image": "Object",
+                "onDoubleClick": "Object",
+                "onPressed": "Object",
+                "pressedImage": "Object"
+            }
+        },
+        {
+            "Signal<se::input::MouseButton>": {
+                "m_RegisteredHandles": "Array"
+            }
+        },
+        {
+            "SignalHandle": {
+                "functionName": "String",
+                "systemName": "String"
+            }
+        },
+        {
+            "FPSCounterComponent": null
+        }
+    ],
+    "root": {
+        "SceneSaveData": {
+            "m_Entities": {
+                "struct": "SceneEntityData",
+                "contents": [
+                    {
+                        "SceneEntityData": {
+                            "entity": 0,
+                            "name": "Camera",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": -0.7321696281433105,
+                                                "y": 2.0,
+                                                "z": 10.0
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 3.140000104904175,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "FirstPersonCameraComponent": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 1,
+                            "name": "Light 1",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "PointLightComponent": {
+                                        "color": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": -0.07541462779045105,
+                                                "y": 4.004288673400879,
+                                                "z": 6.984244346618652
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 2,
+                            "name": "Light 2",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "PointLightComponent": {
+                                        "color": {
+                                            "Vec3": {
+                                                "x": 0.20000000298023224,
+                                                "y": 0.20000000298023224,
+                                                "z": 0.20000000298023224
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 0.822176456451416,
+                                                "y": 4.0398077964782715,
+                                                "z": -6.124428749084473
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 3,
+                            "name": "SM_CorridorBigDoor01",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/Building/SM_CorridorBigDoor01.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": "/assets/materials/MI_CorridorBigDoor01.sass"
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "ParentComponent": null
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 4.011684417724609,
+                                                "y": 0.0,
+                                                "z": -0.15419960021972656
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "RespondsToTestButtonComponent": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 4,
+                            "name": "Button",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MouseInputComponent": {
+                                        "buttonMask": -1,
+                                        "stateMask": 3,
+                                        "receivesScrollEvents": false
+                                    }
+                                },
+                                {
+                                    "WidgetComponent": {
+                                        "visibility": "Visible",
+                                        "updateEnabled": true
+                                    }
+                                },
+                                {
+                                    "RectTransformComponent": {
+                                        "anchors": {
+                                            "Anchors": {
+                                                "left": 0.0,
+                                                "right": 0.0,
+                                                "top": 0.0,
+                                                "bottom": 0.0
+                                            }
+                                        },
+                                        "minX": 20.0,
+                                        "minY": 20.0,
+                                        "maxX": 120.0,
+                                        "maxY": 120.0,
+                                        "minAspectRatio": 0.0,
+                                        "maxAspectRatio": 0.0,
+                                        "minWidth": 0.0,
+                                        "minHeight": 0.0,
+                                        "maxWidth": 0.0,
+                                        "maxHeight": 0.0
+                                    }
+                                },
+                                {
+                                    "ImageComponent": {
+                                        "texture": {
+                                            "AssetReference<Texture>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "ButtonComponent": {
+                                        "image": {
+                                            "AssetReference<Texture>": {
+                                                "m_AssetPath": "/engine_assets/textures/default_button.sass"
+                                            }
+                                        },
+                                        "pressedImage": {
+                                            "AssetReference<Texture>": {
+                                                "m_AssetPath": "/engine_assets/textures/default_button_pressed.sass"
+                                            }
+                                        },
+                                        "hoveredImage": {
+                                            "AssetReference<Texture>": {
+                                                "m_AssetPath": "/engine_assets/textures/default_button_hovered.sass"
+                                            }
+                                        },
+                                        "onPressed": {
+                                            "Signal<se::input::MouseButton>": {
+                                                "m_RegisteredHandles": {
+                                                    "struct": "SignalHandle",
+                                                    "contents": [
+                                                        {
+                                                            "SignalHandle": {
+                                                                "systemName": "ButtonTestSystem",
+                                                                "functionName": "OnTestButtonPressed"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "onDoubleClick": {
+                                            "Signal<se::input::MouseButton>": {
+                                                "m_RegisteredHandles": {
+                                                    "struct": "SignalHandle",
+                                                    "contents": null
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "FPSCounterComponent": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 5,
+                            "name": "SM_CorridorWall03",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/Building/SM_CorridorWall03.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": "/assets/materials/MI_CorridorWall03.sass"
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": -3.4116199016571045,
+                                                "y": 0.03843975067138672,
+                                                "z": -5.613921165466309
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 6,
+                            "name": "SM_AmmunitionBoxes01_Body",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/Props/SM_AmmunitionBoxes01_Body.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": "/assets/materials/MI_AmmunitionBoxes01_Body.sass"
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": -5.679651260375977
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 7,
+                            "name": "SM_CorridorWall03",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/Building/SM_CorridorWall03.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": "/assets/materials/MI_CorridorWall03.sass"
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 3.468935966491699,
+                                                "y": 0.03843975067138672,
+                                                "z": -1.8006095886230469
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": -180.0,
+                                                "y": 0.0,
+                                                "z": 180.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 8,
+                            "name": "SM_CorridorWall03",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/Building/SM_CorridorWall03.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": "/assets/materials/MI_CorridorWall03.sass"
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 3.4700000286102295,
+                                                "y": 0.03843975067138672,
+                                                "z": -4.9988274574279785
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": -180.0,
+                                                "y": 0.0,
+                                                "z": 180.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 9,
+                            "name": "SM_CorridorWall03 ",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/Building/SM_CorridorWall03.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": "/assets/materials/MI_CorridorWall03.sass"
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": -3.4179539680480957,
+                                                "y": 0.03843975067138672,
+                                                "z": -8.811999320983887
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "m_SourcePath": ""
+        }
+    }
+}

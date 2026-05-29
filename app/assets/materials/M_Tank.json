@@ -1,0 +1,310 @@
+{
+    "structs": [
+        {
+            "MaterialInstance": {
+                "m_Material": "Object",
+                "m_SourcePath": "String",
+                "m_UniformStorage": "Object"
+            }
+        },
+        {
+            "AssetReference<Material>": {
+                "m_AssetPath": "String"
+            }
+        },
+        {
+            "UniformStorage": {
+                "m_Storage": "Array"
+            }
+        },
+        {
+            "Internal_MapItemString_Object": {
+                "key": "String",
+                "value": "Object"
+            }
+        },
+        {
+            "UniformValue<Vec3>": {
+                "value": "Array"
+            }
+        },
+        {
+            "Vec3": {
+                "x": "Float",
+                "y": "Float",
+                "z": "Float"
+            }
+        },
+        {
+            "UniformValue<Mat4>": {
+                "value": "Array"
+            }
+        },
+        {
+            "Mat4": {
+                "m_Value": "Array"
+            }
+        },
+        {
+            "Vec4": {
+                "w": "Float",
+                "x": "Float",
+                "y": "Float",
+                "z": "Float"
+            }
+        },
+        {
+            "UniformValue<Vec4>": {
+                "value": "Array"
+            }
+        }
+    ],
+    "root": {
+        "MaterialInstance": {
+            "m_Material": {
+                "AssetReference<Material>": {
+                    "m_AssetPath": "/assets/materials/M_LitFlatColor.sass"
+                }
+            },
+            "m_UniformStorage": {
+                "UniformStorage": {
+                    "m_Storage": {
+                        "struct": "Internal_MapItemString_Object",
+                        "contents": [
+                            {
+                                "Internal_MapItemString_Object": {
+                                    "key": "lightColor",
+                                    "value": {
+                                        "UniformValue<Vec3>": {
+                                            "value": {
+                                                "struct": "Vec3",
+                                                "contents": [
+                                                    {
+                                                        "Vec3": {
+                                                            "x": 0.0,
+                                                            "y": 0.0,
+                                                            "z": 0.0
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "Internal_MapItemString_Object": {
+                                    "key": "lightPos",
+                                    "value": {
+                                        "UniformValue<Vec3>": {
+                                            "value": {
+                                                "struct": "Vec3",
+                                                "contents": [
+                                                    {
+                                                        "Vec3": {
+                                                            "x": 0.0,
+                                                            "y": 0.0,
+                                                            "z": 0.0
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "Internal_MapItemString_Object": {
+                                    "key": "model",
+                                    "value": {
+                                        "UniformValue<Mat4>": {
+                                            "value": {
+                                                "struct": "Mat4",
+                                                "contents": [
+                                                    {
+                                                        "Mat4": {
+                                                            "m_Value": {
+                                                                "struct": "Vec4",
+                                                                "contents": [
+                                                                    {
+                                                                        "Vec4": {
+                                                                            "x": 1.0,
+                                                                            "y": 0.0,
+                                                                            "z": 0.0,
+                                                                            "w": 0.0
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "Vec4": {
+                                                                            "x": 0.0,
+                                                                            "y": 1.0,
+                                                                            "z": 0.0,
+                                                                            "w": 0.0
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "Vec4": {
+                                                                            "x": 0.0,
+                                                                            "y": 0.0,
+                                                                            "z": 1.0,
+                                                                            "w": 0.0
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "Vec4": {
+                                                                            "x": 0.0,
+                                                                            "y": 0.0,
+                                                                            "z": 0.0,
+                                                                            "w": 1.0
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "Internal_MapItemString_Object": {
+                                    "key": "proj",
+                                    "value": {
+                                        "UniformValue<Mat4>": {
+                                            "value": {
+                                                "struct": "Mat4",
+                                                "contents": [
+                                                    {
+                                                        "Mat4": {
+                                                            "m_Value": {
+                                                                "struct": "Vec4",
+                                                                "contents": [
+                                                                    {
+                                                                        "Vec4": {
+                                                                            "x": 1.0,
+                                                                            "y": 0.0,
+                                                                            "z": 0.0,
+                                                                            "w": 0.0
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "Vec4": {
+                                                                            "x": 0.0,
+                                                                            "y": 1.0,
+                                                                            "z": 0.0,
+                                                                            "w": 0.0
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "Vec4": {
+                                                                            "x": 0.0,
+                                                                            "y": 0.0,
+                                                                            "z": 1.0,
+                                                                            "w": 0.0
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "Vec4": {
+                                                                            "x": 0.0,
+                                                                            "y": 0.0,
+                                                                            "z": 0.0,
+                                                                            "w": 1.0
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "Internal_MapItemString_Object": {
+                                    "key": "uniform_color",
+                                    "value": {
+                                        "UniformValue<Vec4>": {
+                                            "value": {
+                                                "struct": "Vec4",
+                                                "contents": [
+                                                    {
+                                                        "Vec4": {
+                                                            "x": 0.5,
+                                                            "y": 0.0,
+                                                            "z": 0.5,
+                                                            "w": 1.0
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "Internal_MapItemString_Object": {
+                                    "key": "view",
+                                    "value": {
+                                        "UniformValue<Mat4>": {
+                                            "value": {
+                                                "struct": "Mat4",
+                                                "contents": [
+                                                    {
+                                                        "Mat4": {
+                                                            "m_Value": {
+                                                                "struct": "Vec4",
+                                                                "contents": [
+                                                                    {
+                                                                        "Vec4": {
+                                                                            "x": 1.0,
+                                                                            "y": 0.0,
+                                                                            "z": 0.0,
+                                                                            "w": 0.0
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "Vec4": {
+                                                                            "x": 0.0,
+                                                                            "y": 1.0,
+                                                                            "z": 0.0,
+                                                                            "w": 0.0
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "Vec4": {
+                                                                            "x": 0.0,
+                                                                            "y": 0.0,
+                                                                            "z": 1.0,
+                                                                            "w": 0.0
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "Vec4": {
+                                                                            "x": 0.0,
+                                                                            "y": 0.0,
+                                                                            "z": 0.0,
+                                                                            "w": 1.0
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "m_SourcePath": "/source_assets/materials/new_material_instance.json"
+        }
+    }
+}

@@ -1,0 +1,787 @@
+{
+    "structs": [
+        {
+            "SceneSaveData": {
+                "m_Entities": "Array",
+                "m_Prefabs": "Array",
+                "m_SourcePath": "String"
+            }
+        },
+        {
+            "SceneEntityData": {
+                "children": "Array",
+                "components": "PolymorphicArray",
+                "entity": "Uint64",
+                "flags": "Int32",
+                "name": "String"
+            }
+        },
+        {
+            "uint64_t": {
+                "val": "Uint64"
+            }
+        },
+        {
+            "Internal_ArrayItem": {
+                "offset": "Uint32",
+                "valid": "bool"
+            }
+        },
+        {
+            "PointLightComponent": {
+                "color": "Object"
+            }
+        },
+        {
+            "Vec3": {
+                "x": "Float",
+                "y": "Float",
+                "z": "Float"
+            }
+        },
+        {
+            "RootComponent": null
+        },
+        {
+            "TransformComponent": {
+                "pos": "Object",
+                "rot": "Object",
+                "scale": "Object"
+            }
+        },
+        {
+            "MeshComponent": {
+                "materialAsset": "Object",
+                "materialInstanceAsset": "Object",
+                "model": "Object",
+                "renderLayer": "Int32",
+                "visible": "bool"
+            }
+        },
+        {
+            "AssetReference<Model>": {
+                "m_AssetPath": "String"
+            }
+        },
+        {
+            "AssetReference<Material>": {
+                "m_AssetPath": "String"
+            }
+        },
+        {
+            "AssetReference<MaterialInstance>": {
+                "m_AssetPath": "String"
+            }
+        },
+        {
+            "ScenePrefabData": {
+                "pos": "Object",
+                "prefab": "Object",
+                "rot": "Object",
+                "scale": "Object"
+            }
+        },
+        {
+            "AssetReference<Prefab>": {
+                "m_AssetPath": "String"
+            }
+        }
+    ],
+    "root": {
+        "SceneSaveData": {
+            "m_Entities": {
+                "struct": "SceneEntityData",
+                "contents": [
+                    {
+                        "SceneEntityData": {
+                            "entity": 0,
+                            "name": "Light",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "PointLightComponent": {
+                                        "color": {
+                                            "Vec3": {
+                                                "x": 0.5,
+                                                "y": 1.0,
+                                                "z": 0.5
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": -6.703346252441406,
+                                                "y": 7.223993301391602,
+                                                "z": 6.226319313049316
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 1,
+                            "name": "Light2",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "PointLightComponent": {
+                                        "color": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 13.900033950805664,
+                                                "y": 7.103074073791504,
+                                                "z": 5.209470748901367
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 2,
+                            "name": "Light3",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "PointLightComponent": {
+                                        "color": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 0.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": -2.1285362243652344,
+                                                "y": 7.189902305603027,
+                                                "z": -12.575996398925781
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 3,
+                            "name": "Floor",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/cube.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": "/engine_assets/materials/M_DefaultLitNoTexture.sass"
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 4.460814476013184,
+                                                "y": -0.18719005584716797,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 20.0,
+                                                "y": 0.20000000298023224,
+                                                "z": 20.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 4,
+                            "name": "Wall1",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/cube.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": "/engine_assets/materials/M_DefaultLitNoTexture.sass"
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 2.5085525512695313,
+                                                "y": 2.0,
+                                                "z": 9.477249145507813
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 4.0,
+                                                "y": 2.0,
+                                                "z": 4.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 5,
+                            "name": "Wall2",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/cube.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": "/engine_assets/materials/M_DefaultLitNoTexture.sass"
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": -6.639369964599609,
+                                                "y": 2.0,
+                                                "z": -5.369255065917969
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 4.0,
+                                                "y": 2.0,
+                                                "z": 2.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 6,
+                            "name": "Wall3",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/cube.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": "/engine_assets/materials/M_DefaultLitNoTexture.sass"
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 11.509407043457031,
+                                                "y": 2.0,
+                                                "z": -7.569787502288818
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 4.0,
+                                                "y": 2.0,
+                                                "z": 2.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 7,
+                            "name": "ExteriorWall1",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/cube.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": "/engine_assets/materials/M_DefaultLitNoTexture.sass"
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": -14.548469543457031,
+                                                "y": 2.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 2.0,
+                                                "z": 20.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 8,
+                            "name": "ExteriorWall2",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/cube.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": "/engine_assets/materials/M_DefaultLitNoTexture.sass"
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 23.492584228515625,
+                                                "y": 2.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 2.0,
+                                                "z": 20.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 9,
+                            "name": "ExteriorWall3",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/cube.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": "/engine_assets/materials/M_DefaultLitNoTexture.sass"
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 4.683509826660156,
+                                                "y": 2.0,
+                                                "z": 18.995676040649414
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 90.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 2.0,
+                                                "z": 18.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 10,
+                            "name": "ExteriorWall4",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "MeshComponent": {
+                                        "model": {
+                                            "AssetReference<Model>": {
+                                                "m_AssetPath": "/assets/models/cube.sass"
+                                            }
+                                        },
+                                        "materialAsset": {
+                                            "AssetReference<Material>": {
+                                                "m_AssetPath": "/engine_assets/materials/M_DefaultLitNoTexture.sass"
+                                            }
+                                        },
+                                        "materialInstanceAsset": {
+                                            "AssetReference<MaterialInstance>": {
+                                                "m_AssetPath": ""
+                                            }
+                                        },
+                                        "renderLayer": 0,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 4.679999828338623,
+                                                "y": 2.0,
+                                                "z": -19.074756622314453
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 90.0,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 2.0,
+                                                "z": 18.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "m_Prefabs": {
+                "struct": "ScenePrefabData",
+                "contents": [
+                    {
+                        "ScenePrefabData": {
+                            "prefab": {
+                                "AssetReference<Prefab>": {
+                                    "m_AssetPath": "/assets/prefabs/player.sass"
+                                }
+                            },
+                            "pos": {
+                                "Vec3": {
+                                    "x": 13.331210136413574,
+                                    "y": 0.670285701751709,
+                                    "z": 0.0
+                                }
+                            },
+                            "rot": {
+                                "Vec3": {
+                                    "x": 0.0,
+                                    "y": 180.0,
+                                    "z": 0.0
+                                }
+                            },
+                            "scale": {
+                                "Vec3": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "m_SourcePath": ""
+        }
+    }
+}

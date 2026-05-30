@@ -69,6 +69,11 @@
                 "y": "Float",
                 "z": "Float"
             }
+        },
+        {
+            "PlayerComponent": {
+                "moveSpeed": "Float"
+            }
         }
     ],
     "root": {
@@ -80,7 +85,7 @@
                         "PrefabEntity": {
                             "entity": 1,
                             "name": "Root",
-                            "flags": 0,
+                            "flags": 2,
                             "children": {
                                 "struct": "uint64_t",
                                 "contents": [
@@ -143,6 +148,11 @@
                                             }
                                         }
                                     }
+                                },
+                                {
+                                    "PlayerComponent": {
+                                        "moveSpeed": 5.0
+                                    }
                                 }
                             ]
                         }
@@ -151,7 +161,7 @@
                         "PrefabEntity": {
                             "entity": 2,
                             "name": "Turret",
-                            "flags": 0,
+                            "flags": 2,
                             "children": {
                                 "struct": "uint64_t",
                                 "contents": null

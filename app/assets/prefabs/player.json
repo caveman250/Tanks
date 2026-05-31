@@ -181,7 +181,7 @@
                                         },
                                         "materialInstanceAsset": {
                                             "AssetReference<MaterialInstance>": {
-                                                "m_AssetPath": "/assets/materials/MI_Tank.sass"
+                                                "m_AssetPath": "/assets/materials/MI_Turret.sass"
                                             }
                                         },
                                         "renderLayer": 0,

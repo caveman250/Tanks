@@ -88,8 +88,8 @@
                                                 "contents": [
                                                     {
                                                         "Vec4": {
-                                                            "x": 1.0,
-                                                            "y": 0.5,
+                                                            "x": 0.5,
+                                                            "y": 1.0,
                                                             "z": 1.0,
                                                             "w": 0.5
                                                         }
@@ -104,7 +104,7 @@
                     }
                 }
             },
-            "m_SourcePath": "/source_assets/materials/MI_Tank.json"
+            "m_SourcePath": "/source_assets/materials/MI_Turret.json"
         }
     }
 }

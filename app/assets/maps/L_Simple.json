@@ -74,6 +74,12 @@
             }
         },
         {
+            "DirLightComponent": {
+                "color": "Object",
+                "dir": "Object"
+            }
+        },
+        {
             "ScenePrefabData": {
                 "pos": "Object",
                 "prefab": "Object",
@@ -534,7 +540,7 @@
                                     "TransformComponent": {
                                         "pos": {
                                             "Vec3": {
-                                                "x": -14.548469543457031,
+                                                "x": -14.300000190734863,
                                                 "y": 2.0,
                                                 "z": 0.0
                                             }
@@ -737,6 +743,65 @@
                                                 "x": 1.0,
                                                 "y": 2.0,
                                                 "z": 18.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "SceneEntityData": {
+                            "entity": 11,
+                            "name": "Sky",
+                            "flags": 0,
+                            "children": {
+                                "struct": "uint64_t",
+                                "contents": null
+                            },
+                            "components": [
+                                {
+                                    "DirLightComponent": {
+                                        "color": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
+                                            }
+                                        },
+                                        "dir": {
+                                            "Vec3": {
+                                                "x": -0.5,
+                                                "y": -1.0,
+                                                "z": -0.5
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "RootComponent": null
+                                },
+                                {
+                                    "TransformComponent": {
+                                        "pos": {
+                                            "Vec3": {
+                                                "x": 0.0,
+                                                "y": 10.827132225036621,
+                                                "z": 0.0
+                                            }
+                                        },
+                                        "rot": {
+                                            "Vec3": {
+                                                "x": 57.49580383300781,
+                                                "y": -41.692840576171875,
+                                                "z": 46.2300910949707
+                                            }
+                                        },
+                                        "scale": {
+                                            "Vec3": {
+                                                "x": 1.0,
+                                                "y": 1.0,
+                                                "z": 1.0
                                             }
                                         }
                                     }

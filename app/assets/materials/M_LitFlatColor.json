@@ -45,18 +45,6 @@
             }
         },
         {
-            "ShaderSettingDefinition<Vec3>": {
-                "m_Value": "Object"
-            }
-        },
-        {
-            "Vec3": {
-                "x": "Float",
-                "y": "Float",
-                "z": "Float"
-            }
-        },
-        {
             "ShaderSettingDefinition<Vec4>": {
                 "m_Value": "Object"
             }
@@ -64,6 +52,18 @@
         {
             "Vec4": {
                 "w": "Float",
+                "x": "Float",
+                "y": "Float",
+                "z": "Float"
+            }
+        },
+        {
+            "ShaderSettingDefinition<Vec3>": {
+                "m_Value": "Object"
+            }
+        },
+        {
+            "Vec3": {
                 "x": "Float",
                 "y": "Float",
                 "z": "Float"
@@ -97,7 +97,7 @@
                     },
                     {
                         "AssetReference<Shader>": {
-                            "m_AssetPath": "/engine_assets/shaders/point_light.sass"
+                            "m_AssetPath": "/engine_assets/shaders/lighting.sass"
                         }
                     }
                 ]
@@ -122,10 +122,27 @@
                         "contents": [
                             {
                                 "Internal_MapItemString_Object": {
-                                    "key": "numLights",
+                                    "key": "numDirLights",
                                     "value": {
                                         "ShaderSettingDefinition<int32_t>": {
-                                            "m_Value": 3
+                                            "m_Value": 1
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "Internal_MapItemString_Object": {
+                                    "key": "ambientStr",
+                                    "value": {
+                                        "ShaderSettingDefinition<Vec4>": {
+                                            "m_Value": {
+                                                "Vec4": {
+                                                    "x": 0.0,
+                                                    "y": 0.0,
+                                                    "z": 0.0,
+                                                    "w": 1.0
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -148,17 +165,10 @@
                             },
                             {
                                 "Internal_MapItemString_Object": {
-                                    "key": "ambientStr",
+                                    "key": "numPointLights",
                                     "value": {
-                                        "ShaderSettingDefinition<Vec4>": {
-                                            "m_Value": {
-                                                "Vec4": {
-                                                    "x": 0.20000000298023224,
-                                                    "y": 0.20000000298023224,
-                                                    "z": 0.20000000298023224,
-                                                    "w": 1.0
-                                                }
-                                            }
+                                        "ShaderSettingDefinition<int32_t>": {
+                                            "m_Value": 3
                                         }
                                     }
                                 }

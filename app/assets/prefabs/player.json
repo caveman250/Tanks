@@ -111,7 +111,7 @@
                                         },
                                         "materialInstanceAsset": {
                                             "AssetReference<MaterialInstance>": {
-                                                "m_AssetPath": "/assets/materials/M_Tank.sass"
+                                                "m_AssetPath": "/assets/materials/MI_Tank.sass"
                                             }
                                         },
                                         "renderLayer": 0,
@@ -181,7 +181,7 @@
                                         },
                                         "materialInstanceAsset": {
                                             "AssetReference<MaterialInstance>": {
-                                                "m_AssetPath": "/assets/materials/M_Tank.sass"
+                                                "m_AssetPath": "/assets/materials/MI_Tank.sass"
                                             }
                                         },
                                         "renderLayer": 0,

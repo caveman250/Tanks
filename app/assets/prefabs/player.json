@@ -28,7 +28,8 @@
         },
         {
             "AABBColliderComponent": {
-                "aabb": "Object"
+                "aabb": "Object",
+                "dynamic": "bool"
             }
         },
         {
@@ -127,7 +128,8 @@
                                                     }
                                                 }
                                             }
-                                        }
+                                        },
+                                        "dynamic": true
                                     }
                                 },
                                 {

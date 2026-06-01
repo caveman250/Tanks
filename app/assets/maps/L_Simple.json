@@ -75,6 +75,18 @@
             }
         },
         {
+            "AABBColliderComponent": {
+                "aabb": "Object",
+                "dynamic": "bool"
+            }
+        },
+        {
+            "AABB": {
+                "center": "Object",
+                "size": "Object"
+            }
+        },
+        {
             "DirLightComponent": {
                 "color": "Object"
             }
@@ -330,6 +342,29 @@
                             },
                             "components": [
                                 {
+                                    "AABBColliderComponent": {
+                                        "aabb": {
+                                            "AABB": {
+                                                "center": {
+                                                    "Vec3": {
+                                                        "x": 0.0,
+                                                        "y": 0.0,
+                                                        "z": 0.0
+                                                    }
+                                                },
+                                                "size": {
+                                                    "Vec3": {
+                                                        "x": 4.0,
+                                                        "y": 2.0,
+                                                        "z": 4.0
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "dynamic": false
+                                    }
+                                },
+                                {
                                     "MeshComponent": {
                                         "model": {
                                             "AssetReference<Model>": {
@@ -391,6 +426,29 @@
                                 "contents": null
                             },
                             "components": [
+                                {
+                                    "AABBColliderComponent": {
+                                        "aabb": {
+                                            "AABB": {
+                                                "center": {
+                                                    "Vec3": {
+                                                        "x": 0.0,
+                                                        "y": 0.0,
+                                                        "z": 0.0
+                                                    }
+                                                },
+                                                "size": {
+                                                    "Vec3": {
+                                                        "x": 4.0,
+                                                        "y": 2.0,
+                                                        "z": 2.0
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "dynamic": false
+                                    }
+                                },
                                 {
                                     "MeshComponent": {
                                         "model": {
@@ -454,6 +512,29 @@
                             },
                             "components": [
                                 {
+                                    "AABBColliderComponent": {
+                                        "aabb": {
+                                            "AABB": {
+                                                "center": {
+                                                    "Vec3": {
+                                                        "x": 0.0,
+                                                        "y": 0.0,
+                                                        "z": 0.0
+                                                    }
+                                                },
+                                                "size": {
+                                                    "Vec3": {
+                                                        "x": 4.0,
+                                                        "y": 2.0,
+                                                        "z": 2.0
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "dynamic": false
+                                    }
+                                },
+                                {
                                     "MeshComponent": {
                                         "model": {
                                             "AssetReference<Model>": {
@@ -515,6 +596,29 @@
                                 "contents": null
                             },
                             "components": [
+                                {
+                                    "AABBColliderComponent": {
+                                        "aabb": {
+                                            "AABB": {
+                                                "center": {
+                                                    "Vec3": {
+                                                        "x": 0.0,
+                                                        "y": 0.0,
+                                                        "z": 0.0
+                                                    }
+                                                },
+                                                "size": {
+                                                    "Vec3": {
+                                                        "x": 1.0,
+                                                        "y": 2.0,
+                                                        "z": 20.0
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "dynamic": false
+                                    }
+                                },
                                 {
                                     "MeshComponent": {
                                         "model": {
@@ -578,6 +682,29 @@
                             },
                             "components": [
                                 {
+                                    "AABBColliderComponent": {
+                                        "aabb": {
+                                            "AABB": {
+                                                "center": {
+                                                    "Vec3": {
+                                                        "x": 0.0,
+                                                        "y": 0.0,
+                                                        "z": 0.0
+                                                    }
+                                                },
+                                                "size": {
+                                                    "Vec3": {
+                                                        "x": 1.0,
+                                                        "y": 2.0,
+                                                        "z": 18.0
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "dynamic": false
+                                    }
+                                },
+                                {
                                     "MeshComponent": {
                                         "model": {
                                             "AssetReference<Model>": {
@@ -640,6 +767,29 @@
                             },
                             "components": [
                                 {
+                                    "AABBColliderComponent": {
+                                        "aabb": {
+                                            "AABB": {
+                                                "center": {
+                                                    "Vec3": {
+                                                        "x": 0.0,
+                                                        "y": 0.0,
+                                                        "z": 0.0
+                                                    }
+                                                },
+                                                "size": {
+                                                    "Vec3": {
+                                                        "x": 18.0,
+                                                        "y": 2.0,
+                                                        "z": 1.0
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "dynamic": false
+                                    }
+                                },
+                                {
                                     "MeshComponent": {
                                         "model": {
                                             "AssetReference<Model>": {
@@ -701,6 +851,29 @@
                                 "contents": null
                             },
                             "components": [
+                                {
+                                    "AABBColliderComponent": {
+                                        "aabb": {
+                                            "AABB": {
+                                                "center": {
+                                                    "Vec3": {
+                                                        "x": 0.0,
+                                                        "y": 0.0,
+                                                        "z": 0.0
+                                                    }
+                                                },
+                                                "size": {
+                                                    "Vec3": {
+                                                        "x": 18.0,
+                                                        "y": 2.0,
+                                                        "z": 1.0
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "dynamic": false
+                                    }
+                                },
                                 {
                                     "MeshComponent": {
                                         "model": {
@@ -821,7 +994,7 @@
                                 "Vec3": {
                                     "x": 13.331210136413574,
                                     "y": 0.670285701751709,
-                                    "z": 0.0
+                                    "z": 0.625244140625
                                 }
                             },
                             "rot": {

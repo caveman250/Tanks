@@ -86,6 +86,9 @@
             "PlayerComponent": {
                 "moveSpeed": "Float"
             }
+        },
+        {
+            "PlayerTurretComponent": null
         }
     ],
     "root": {
@@ -247,6 +250,9 @@
                                             }
                                         }
                                     }
+                                },
+                                {
+                                    "PlayerTurretComponent": null
                                 }
                             ]
                         }

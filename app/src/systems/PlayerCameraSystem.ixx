@@ -1,10 +1,12 @@
-#pragma once
+module;
 #include "engine/ecs/System.h"
+
+export module PlayerCameraSystem;
 
 namespace app
 {
     using namespace se;
-    class PlayerInputSystem : public ecs::AppSystem
+    export class PlayerCameraSystem : public ecs::AppSystem
     {
         SPARK_SYSTEM()
 

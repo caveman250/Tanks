@@ -1,19 +1,15 @@
-#pragma once
+module;
 
 #include "engine/Application.h"
 
-namespace se::render
-{
-    class VertexBuffer;
-    class Material;
-}
+export module TanksApplication;
 
 namespace app
 {
     struct Node;
     struct OtherComp;
 
-    class TanksApplication : public se::Application
+    export class TanksApplication : public se::Application
     {
     public:
         static TanksApplication* GetTemplateApplication();

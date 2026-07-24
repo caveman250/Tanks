@@ -1,9 +1,10 @@
 module;
-#include "components/PlayerComponent.h"
 #include "engine/ecs/components/TransformComponent.h"
 #include "engine/ecs/System.h"
 
 module PlayerMovementSystem;
+
+import PlayerComponent;
 
 namespace app
 {

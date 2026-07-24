@@ -1,9 +1,10 @@
-#pragma once
+module;
 #include "engine/ecs/Component.h"
 
+export module PlayerComponent;
 namespace app
 {
-    struct PlayerComponent : se::ecs::Component
+    export struct PlayerComponent : se::ecs::Component
     {
         SPARK_COMPONENT()
 

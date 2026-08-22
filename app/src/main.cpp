@@ -1,6 +1,6 @@
 #include <platform/PlatformRunLoop.h>
 
-#include "engine/Application.h"
+import Application;
 
 import TanksApplication;
 

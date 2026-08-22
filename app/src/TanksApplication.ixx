@@ -1,8 +1,8 @@
 module;
 
-#include "engine/Application.h"
-
 export module TanksApplication;
+
+import Application;
 
 namespace app
 {

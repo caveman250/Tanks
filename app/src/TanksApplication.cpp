@@ -1,7 +1,7 @@
 module;
 #include "generated/Classes.generated.h"
 #include "generated/Systems.generated.h"
-#include "engine/ecs/Prefab.h"
+
 module TanksApplication;
 
 namespace app

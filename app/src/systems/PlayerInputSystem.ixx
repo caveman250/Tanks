@@ -1,7 +1,6 @@
-module;
-#include "engine/ecs/System.h"
-
 export module PlayerInputSystem;
+
+import System;
 
 namespace app
 {

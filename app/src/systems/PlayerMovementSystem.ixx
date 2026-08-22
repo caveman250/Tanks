@@ -1,7 +1,7 @@
-module;
-#include "engine/ecs/System.h"
-
 export module PlayerMovementSystem;
+
+import System;
+
 namespace app
 {
     using namespace se;

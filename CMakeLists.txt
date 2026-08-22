@@ -33,9 +33,8 @@ include(ExternalTools)
                                  WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR})
 
 get_filename_component(ENGINE_ABSOLUTE_PATH spark/engine/src ABSOLUTE)
-get_filename_component(EDITOR_ABSOLUTE_PATH spark/editor/src ABSOLUTE)
 get_filename_component(APP_ABSOLUTE_PATH app/src ABSOLUTE)
-execute_process(COMMAND ${PYTHON_EXE} SparkHeaderTool.py "${ENGINE_ABSOLUTE_PATH};${EDITOR_ABSOLUTE_PATH};${APP_ABSOLUTE_PATH}"
+execute_process(COMMAND ${PYTHON_EXE} SparkHeaderTool.py "${ENGINE_ABSOLUTE_PATH};${APP_ABSOLUTE_PATH}"
         RESULT_VARIABLE header_tool_result
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/spark/build/SparkHeaderTool)
 
@@ -44,7 +43,6 @@ if(NOT ${header_tool_result} EQUAL 0)
 endif()
 
 add_subdirectory(spark/engine)
-add_subdirectory(spark/editor)
 add_subdirectory(spark/tools)
 
 add_subdirectory(app)

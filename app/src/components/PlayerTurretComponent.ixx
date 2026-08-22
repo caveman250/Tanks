@@ -1,4 +1,6 @@
 module;
+
+#include "spark.h"
 #include "engine/ecs/Component.h"
 
 export module PlayerTurretComponent;

@@ -1,11 +1,11 @@
 module;
-#include "engine/camera/ActiveCameraComponent.h"
-#include "engine/ecs/components/TransformComponent.h"
-#include "engine/ecs/System.h"
+
+
 
 module PlayerCameraSystem;
 
 import PlayerComponent;
+import System;
 
 namespace app
 {

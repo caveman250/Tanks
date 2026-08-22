@@ -1,7 +1,6 @@
-module;
-#include "engine/ecs/System.h"
-
 export module PlayerCameraSystem;
+
+import System;
 
 namespace app
 {

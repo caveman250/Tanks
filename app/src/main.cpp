@@ -1,8 +1,7 @@
 #include <platform/PlatformRunLoop.h>
 
+#include "TanksApplication.h"
 #include "engine/Application.h"
-
-import TanksApplication;
 
 int main(int, char*[])
 {

@@ -28,7 +28,7 @@ namespace app
                 .WithSingletonComponent<camera::ActiveCameraComponent>();
         }
 
-        void OnUpdate(const ecs::QueryResults& results) override
+        void OnUpdate(const ecs::QueryResults& results)
         {
             ecs::ForEachArcheType(results, ecs::UpdateMode::SingleThreaded, false, [](const ecs::SystemUpdateData& updateData)
             {

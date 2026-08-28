@@ -26,6 +26,7 @@ namespace app
 
             for (size_t i = 0; i < entities.size(); ++i)
             {
+                const auto& entity = entities[i];
                 const auto& player = players[i];
                 auto& transform = transforms[i];
 

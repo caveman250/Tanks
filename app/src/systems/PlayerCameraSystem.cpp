@@ -22,6 +22,7 @@ namespace app
         ecs::ForEachArcheType(results, ecs::UpdateMode::SingleThreaded, false, [](const ecs::SystemUpdateData& updateData)
         {
             auto* app = Application::Get();
+            float dt = app->GetDeltaTime();
             const auto& entities = updateData.GetEntities();
             auto* transforms = updateData.GetComponentArray<ecs::components::TransformComponent>();
             auto* camera = updateData.GetSingletonComponent<camera::ActiveCameraComponent>();

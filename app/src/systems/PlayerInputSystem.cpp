@@ -1,12 +1,11 @@
 module;
+#include "components/PlayerComponent.h"
 #include "engine/ecs/components/TransformComponent.h"
 #include "engine/input/InputComponent.h"
 #include "engine/input/InputUtil.h"
 #include "engine/ecs/System.h"
 
 module PlayerInputSystem;
-
-import PlayerComponent;
 
 namespace app
 {

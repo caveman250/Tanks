@@ -1,4 +1,6 @@
 module;
+#include "components/PlayerComponent.h"
+#include "components/PlayerTurretComponent.h"
 #include "editor/util/ViewportUtil.h"
 #include "engine/ecs/components/TransformComponent.h"
 #include "engine/math/util/ViewportUtil.h"
@@ -9,8 +11,6 @@ module;
 #include "platform/IWindow.h"
 
 export module PlayerTurretSystem;
-
-import PlayerTurretComponent;
 
 namespace app
 {

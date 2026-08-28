@@ -12,8 +12,8 @@ namespace app
 
     void TanksApplication::Init()
     {
-        se::InitClassReflection();
         Application::Init();
+        se::app_InitClassReflection();
         se::app_InitSystems(&m_World);
 
 #if !SPARK_EDITOR

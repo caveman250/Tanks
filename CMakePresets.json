@@ -131,13 +131,8 @@
     {
       "name": "Debug (Mac)",
       "displayName": "Debug",
-      "generator": "Ninja",
+      "generator": "Unix Makefiles",
       "binaryDir": "${sourceDir}/projects/${generator}/debug",
-      "vendor": {
-        "jetbrains.com/clion": {
-          "toolchain": "Clang 22.1.8"
-        }
-      },
       "cacheVariables": {
         "USE_EDITOR": "OFF",
         "CMAKE_BUILD_TYPE": "Debug"
@@ -151,13 +146,8 @@
     {
       "name": "Debug Editor (Mac)",
       "displayName": "Debug Editor",
-      "generator": "Ninja",
+      "generator": "Unix Makefiles",
       "binaryDir": "${sourceDir}/projects/${generator}/debug_editor",
-      "vendor": {
-        "jetbrains.com/clion": {
-          "toolchain": "Clang 22.1.8"
-        }
-      },
       "cacheVariables": {
         "USE_EDITOR": "ON",
         "CMAKE_BUILD_TYPE": "Debug"
@@ -171,13 +161,8 @@
     {
       "name": "Release (Mac)",
       "displayName": "Release",
-      "generator": "Ninja",
+      "generator": "Unix Makefiles",
       "binaryDir": "${sourceDir}/projects/${generator}/release",
-      "vendor": {
-        "jetbrains.com/clion": {
-          "toolchain": "Clang 22.1.8"
-        }
-      },
       "cacheVariables": {
         "USE_EDITOR": "OFF",
         "CMAKE_BUILD_TYPE": "RelWithDebInfo"
@@ -191,13 +176,8 @@
     {
       "name": "Release Editor (Mac)",
       "displayName": "Release Editor",
-      "generator": "Ninja",
+      "generator": "Unix Makefiles",
       "binaryDir": "${sourceDir}/projects/${generator}/release_editor",
-      "vendor": {
-        "jetbrains.com/clion": {
-          "toolchain": "Clang 22.1.8"
-        }
-      },
       "cacheVariables": {
         "USE_EDITOR": "ON",
         "CMAKE_BUILD_TYPE": "RelWithDebInfo"
@@ -211,13 +191,8 @@
     {
       "name": "Distribution (Mac)",
       "displayName": "Distribution",
-      "generator": "Ninja",
+      "generator": "Unix Makefiles",
       "binaryDir": "${sourceDir}/projects/${generator}/distribution",
-      "vendor": {
-        "jetbrains.com/clion": {
-          "toolchain": "Clang 22.1.8"
-        }
-      },
       "cacheVariables": {
         "USE_EDITOR": "OFF",
         "DIST_BUILD": "ON",
@@ -232,13 +207,8 @@
     {
       "name": "Distribution Editor (Mac)",
       "displayName": "Distribution Editor",
-      "generator": "Ninja",
+      "generator": "Unix Makefiles",
       "binaryDir": "${sourceDir}/projects/${generator}/distribution_editor",
-      "vendor": {
-        "jetbrains.com/clion": {
-          "toolchain": "Clang 22.1.8"
-        }
-      },
       "cacheVariables": {
         "USE_EDITOR": "ON",
         "DIST_BUILD": "ON",

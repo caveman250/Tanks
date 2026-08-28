@@ -1,6 +1,4 @@
-cmake_minimum_required(VERSION 3.30)
-
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/spark/build/cmake/")
+cmake_minimum_required(VERSION 3.28)
 
 if (UNIX AND APPLE)
     project(Spark LANGUAGES C CXX OBJC OBJCXX)
@@ -12,6 +10,8 @@ option(USE_EDITOR "" OFF)
 option(DIST_BUILD "" OFF)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/spark/build/cmake/")
 
 include(MultiTarget)
 

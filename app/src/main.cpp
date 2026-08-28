@@ -1,3 +1,6 @@
+
+
+#include <iostream>
 #include <platform/PlatformRunLoop.h>
 
 #include "TanksApplication.h"

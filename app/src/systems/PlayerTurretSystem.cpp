@@ -21,8 +21,7 @@ namespace app
                .WithComponent<const PlayerTurretComponent>()
                .WithComponent<ecs::components::TransformComponent>()
                .WithSingletonComponent<input::InputComponent>()
-               .WithSingletonComponent<camera::ActiveCameraComponent>()
-               .WithSingletonComponent<geo::singleton_components::CollisionComponent>();
+               .WithSingletonComponent<camera::ActiveCameraComponent>();
     }
 
     void PlayerTurretSystem::OnUpdate(const ecs::QueryResults& results)
@@ -33,8 +32,6 @@ namespace app
             auto* transforms = updateData.GetComponentArray<ecs::components::TransformComponent>();
             auto* input = updateData.GetSingletonComponent<input::InputComponent>();
             auto* camera = updateData.GetSingletonComponent<camera::ActiveCameraComponent>();
-            auto* collisionComp = updateData.GetSingletonComponent<geo::singleton_components::CollisionComponent>();
-
 
 #if SPARK_EDITOR
             const auto viewportRect = Application::Get()->GetEditor()->GetViewportRect();
@@ -85,7 +82,7 @@ namespace app
                     transform.rot = math::EulerFromMat4(rotMat);
 
                     worldPos = math::Vec3{ transform.worldTransform[3].x, transform.worldTransform[3].y, transform.worldTransform[3].z };
-                    input::InputUtil::ProcessMouseEvents(entity, input, [transform, worldPos, entity, collisionComp, f](const input::MouseEvent& mouseEvent)
+                    input::InputUtil::ProcessMouseEvents(entity, input, [transform, worldPos, entity, f](const input::MouseEvent& mouseEvent)
                     {
                         if (mouseEvent.button == input::MouseButton::Left && mouseEvent.state == input::KeyState::Down)
                         {
@@ -93,9 +90,8 @@ namespace app
                             math::Vec3 forward = transform.parent->worldTransform * math::Vec4(f, 0.f);
                             auto bulletPos = worldPos + forward * 2;
 
-                            se::ecs::World::NewComponents createdComponents = {};
-                            world->InstantiatePrefab(world->GetDefaultScene(), asset::AssetManager::Get()->GetAsset<ecs::Prefab>("/assets/prefabs/bullet.sass"), &bulletPos, nullptr, nullptr, false, &createdComponents);
-                            std::function func = [&createdComponents, forward, parent = entity, collisionComp](const se::ecs::Id& entity, BulletComponent* bullet, geo::components::AABBColliderComponent* aabb)
+                            auto newPrefab = world->InstantiatePrefab(world->GetDefaultScene(), asset::AssetManager::Get()->GetAsset<ecs::Prefab>("/assets/prefabs/bullet.sass"), &bulletPos, nullptr, nullptr, false);
+                            std::function func = [forward, parent = entity](const ecs::Id&, BulletComponent* bullet, geo::components::AABBColliderComponent* aabb)
                             {
                                 bullet->velocity = forward;
 
@@ -105,7 +101,7 @@ namespace app
                                 });
 
                             };
-                            createdComponents.ForEachEntity<BulletComponent, geo::components::AABBColliderComponent>(func);
+                            newPrefab.ForEachEntity<BulletComponent, geo::components::AABBColliderComponent>(func);
                         }
 
                         return false;

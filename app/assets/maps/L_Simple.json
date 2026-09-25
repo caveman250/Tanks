@@ -2,6 +2,8 @@
     "structs": [
         {
             "SceneSaveData": {
+                "m_EditorCameraPos": "Object",
+                "m_EditorCameraRot": "Object",
                 "m_Entities": "Array",
                 "m_Prefabs": "Array",
                 "m_SourcePath": "String"
@@ -77,13 +79,25 @@
         {
             "AABBColliderComponent": {
                 "aabb": "Object",
-                "dynamic": "bool"
+                "dynamic": "bool",
+                "onCollisionEnter": "Object"
             }
         },
         {
             "AABB": {
                 "center": "Object",
                 "size": "Object"
+            }
+        },
+        {
+            "Signal<Id>": {
+                "m_RegisteredHandles": "Array"
+            }
+        },
+        {
+            "SignalHandle": {
+                "functionName": "String",
+                "systemName": "String"
             }
         },
         {
@@ -361,7 +375,15 @@
                                                 }
                                             }
                                         },
-                                        "dynamic": false
+                                        "dynamic": false,
+                                        "onCollisionEnter": {
+                                            "Signal<Id>": {
+                                                "m_RegisteredHandles": {
+                                                    "struct": "SignalHandle",
+                                                    "contents": null
+                                                }
+                                            }
+                                        }
                                     }
                                 },
                                 {
@@ -446,7 +468,15 @@
                                                 }
                                             }
                                         },
-                                        "dynamic": false
+                                        "dynamic": false,
+                                        "onCollisionEnter": {
+                                            "Signal<Id>": {
+                                                "m_RegisteredHandles": {
+                                                    "struct": "SignalHandle",
+                                                    "contents": null
+                                                }
+                                            }
+                                        }
                                     }
                                 },
                                 {
@@ -531,7 +561,15 @@
                                                 }
                                             }
                                         },
-                                        "dynamic": false
+                                        "dynamic": false,
+                                        "onCollisionEnter": {
+                                            "Signal<Id>": {
+                                                "m_RegisteredHandles": {
+                                                    "struct": "SignalHandle",
+                                                    "contents": null
+                                                }
+                                            }
+                                        }
                                     }
                                 },
                                 {
@@ -616,7 +654,15 @@
                                                 }
                                             }
                                         },
-                                        "dynamic": false
+                                        "dynamic": false,
+                                        "onCollisionEnter": {
+                                            "Signal<Id>": {
+                                                "m_RegisteredHandles": {
+                                                    "struct": "SignalHandle",
+                                                    "contents": null
+                                                }
+                                            }
+                                        }
                                     }
                                 },
                                 {
@@ -701,7 +747,15 @@
                                                 }
                                             }
                                         },
-                                        "dynamic": false
+                                        "dynamic": false,
+                                        "onCollisionEnter": {
+                                            "Signal<Id>": {
+                                                "m_RegisteredHandles": {
+                                                    "struct": "SignalHandle",
+                                                    "contents": null
+                                                }
+                                            }
+                                        }
                                     }
                                 },
                                 {
@@ -786,7 +840,15 @@
                                                 }
                                             }
                                         },
-                                        "dynamic": false
+                                        "dynamic": false,
+                                        "onCollisionEnter": {
+                                            "Signal<Id>": {
+                                                "m_RegisteredHandles": {
+                                                    "struct": "SignalHandle",
+                                                    "contents": null
+                                                }
+                                            }
+                                        }
                                     }
                                 },
                                 {
@@ -871,7 +933,15 @@
                                                 }
                                             }
                                         },
-                                        "dynamic": false
+                                        "dynamic": false,
+                                        "onCollisionEnter": {
+                                            "Signal<Id>": {
+                                                "m_RegisteredHandles": {
+                                                    "struct": "SignalHandle",
+                                                    "contents": null
+                                                }
+                                            }
+                                        }
                                     }
                                 },
                                 {
@@ -1014,6 +1084,20 @@
                         }
                     }
                 ]
+            },
+            "m_EditorCameraPos": {
+                "Vec3": {
+                    "x": 36.56104278564453,
+                    "y": 32.70415496826172,
+                    "z": 16.822053909301758
+                }
+            },
+            "m_EditorCameraRot": {
+                "Vec3": {
+                    "x": -0.7400002479553223,
+                    "y": 4.2450056076049805,
+                    "z": 0.0
+                }
             },
             "m_SourcePath": ""
         }

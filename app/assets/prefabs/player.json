@@ -29,7 +29,9 @@
         {
             "AABBColliderComponent": {
                 "aabb": "Object",
-                "dynamic": "bool"
+                "collisionChannel": "String",
+                "dynamic": "bool",
+                "onCollisionEnter": "Object"
             }
         },
         {
@@ -43,6 +45,17 @@
                 "x": "Float",
                 "y": "Float",
                 "z": "Float"
+            }
+        },
+        {
+            "Signal<Id>": {
+                "m_RegisteredHandles": "Array"
+            }
+        },
+        {
+            "SignalHandle": {
+                "functionName": "String",
+                "systemName": "String"
             }
         },
         {
@@ -132,7 +145,16 @@
                                                 }
                                             }
                                         },
-                                        "dynamic": true
+                                        "dynamic": true,
+                                        "onCollisionEnter": {
+                                            "Signal<Id>": {
+                                                "m_RegisteredHandles": {
+                                                    "struct": "SignalHandle",
+                                                    "contents": null
+                                                }
+                                            }
+                                        },
+                                        "collisionChannel": "Player"
                                     }
                                 },
                                 {

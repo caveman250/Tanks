@@ -99,14 +99,6 @@
                 "rot": "Object",
                 "scale": "Object"
             }
-        },
-        {
-            "PlayerComponent": {
-                "moveSpeed": "Float"
-            }
-        },
-        {
-            "PlayerTurretComponent": null
         }
     ],
     "root": {
@@ -161,7 +153,7 @@
                                         },
                                         "collisionChannel": {
                                             "CollisionChannel": {
-                                                "channel": "Player"
+                                                "channel": "Enemy"
                                             }
                                         }
                                     }
@@ -180,7 +172,7 @@
                                         },
                                         "materialInstanceAsset": {
                                             "AssetReference<MaterialInstance>": {
-                                                "m_AssetPath": "/assets/materials/MI_Tank.sass"
+                                                "m_AssetPath": "/assets/materials/MI_Enemy.sass"
                                             }
                                         },
                                         "renderLayer": 0,
@@ -217,11 +209,6 @@
                                             }
                                         }
                                     }
-                                },
-                                {
-                                    "PlayerComponent": {
-                                        "moveSpeed": 5.0
-                                    }
                                 }
                             ]
                         }
@@ -250,7 +237,7 @@
                                         },
                                         "materialInstanceAsset": {
                                             "AssetReference<MaterialInstance>": {
-                                                "m_AssetPath": "/assets/materials/MI_Turret.sass"
+                                                "m_AssetPath": "/assets/materials/MI_EnemyTurret.sass"
                                             }
                                         },
                                         "renderLayer": 0,
@@ -281,16 +268,13 @@
                                             }
                                         }
                                     }
-                                },
-                                {
-                                    "PlayerTurretComponent": null
                                 }
                             ]
                         }
                     }
                 ]
             },
-            "m_SourcePath": "/source_assets/prefabs/player.json"
+            "m_SourcePath": "/source_assets/prefabs/enemy.json"
         }
     }
 }

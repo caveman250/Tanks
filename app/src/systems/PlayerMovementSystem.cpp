@@ -30,25 +30,25 @@ namespace app
                 if (player.isMovingUp)
                 {
                     transform.pos.x -= player.moveSpeed * dt;
-                    desiredRotations.push_back(180.f);
+                    desiredRotations.push_back(270.f);
                 }
 
                 if (player.isMovingDown)
                 {
                     transform.pos.x += player.moveSpeed * dt;
-                    desiredRotations.push_back(0.f);
+                    desiredRotations.push_back(90.f);
                 }
 
                 if (player.isMovingLeft)
                 {
                     transform.pos.z += player.moveSpeed * dt;
-                    desiredRotations.push_back(270.f);
+                    desiredRotations.push_back(0.f);
                 }
 
                 if (player.isMovingRight)
                 {
                     transform.pos.z -= player.moveSpeed * dt;
-                    desiredRotations.push_back(90.f);
+                    desiredRotations.push_back(180.f);
                 }
 
                 if (desiredRotations.size() > 0)

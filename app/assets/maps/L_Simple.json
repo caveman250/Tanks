@@ -79,6 +79,7 @@
         {
             "AABBColliderComponent": {
                 "aabb": "Object",
+                "collisionChannel": "Object",
                 "dynamic": "bool",
                 "onCollisionEnter": "Object"
             }
@@ -98,6 +99,11 @@
             "SignalHandle": {
                 "functionName": "String",
                 "systemName": "String"
+            }
+        },
+        {
+            "CollisionChannel": {
+                "channel": "String"
             }
         },
         {
@@ -383,6 +389,11 @@
                                                     "contents": null
                                                 }
                                             }
+                                        },
+                                        "collisionChannel": {
+                                            "CollisionChannel": {
+                                                "channel": "Default"
+                                            }
                                         }
                                     }
                                 },
@@ -475,6 +486,11 @@
                                                     "struct": "SignalHandle",
                                                     "contents": null
                                                 }
+                                            }
+                                        },
+                                        "collisionChannel": {
+                                            "CollisionChannel": {
+                                                "channel": "Default"
                                             }
                                         }
                                     }
@@ -569,6 +585,11 @@
                                                     "contents": null
                                                 }
                                             }
+                                        },
+                                        "collisionChannel": {
+                                            "CollisionChannel": {
+                                                "channel": "Default"
+                                            }
                                         }
                                     }
                                 },
@@ -661,6 +682,11 @@
                                                     "struct": "SignalHandle",
                                                     "contents": null
                                                 }
+                                            }
+                                        },
+                                        "collisionChannel": {
+                                            "CollisionChannel": {
+                                                "channel": "Default"
                                             }
                                         }
                                     }
@@ -755,6 +781,11 @@
                                                     "contents": null
                                                 }
                                             }
+                                        },
+                                        "collisionChannel": {
+                                            "CollisionChannel": {
+                                                "channel": "Default"
+                                            }
                                         }
                                     }
                                 },
@@ -848,6 +879,11 @@
                                                     "contents": null
                                                 }
                                             }
+                                        },
+                                        "collisionChannel": {
+                                            "CollisionChannel": {
+                                                "channel": "Default"
+                                            }
                                         }
                                     }
                                 },
@@ -940,6 +976,11 @@
                                                     "struct": "SignalHandle",
                                                     "contents": null
                                                 }
+                                            }
+                                        },
+                                        "collisionChannel": {
+                                            "CollisionChannel": {
+                                                "channel": "Default"
                                             }
                                         }
                                     }
@@ -1082,20 +1123,50 @@
                                 }
                             }
                         }
+                    },
+                    {
+                        "ScenePrefabData": {
+                            "prefab": {
+                                "AssetReference<Prefab>": {
+                                    "m_AssetPath": "/assets/prefabs/enemy.sass"
+                                }
+                            },
+                            "pos": {
+                                "Vec3": {
+                                    "x": 0.0,
+                                    "y": 0.6700000166893005,
+                                    "z": -13.097663879394531
+                                }
+                            },
+                            "rot": {
+                                "Vec3": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                }
+                            },
+                            "scale": {
+                                "Vec3": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                }
+                            }
+                        }
                     }
                 ]
             },
             "m_EditorCameraPos": {
                 "Vec3": {
-                    "x": 43.12441635131836,
-                    "y": 29.156375885009766,
-                    "z": 18.263090133666992
+                    "x": 38.74159240722656,
+                    "y": 26.569955825805664,
+                    "z": -7.792924880981445
                 }
             },
             "m_EditorCameraRot": {
                 "Vec3": {
-                    "x": -0.5750003457069397,
-                    "y": 4.290005207061768,
+                    "x": -0.5749998092651367,
+                    "y": 5.065005302429199,
                     "z": 0.0
                 }
             },

@@ -13,6 +13,7 @@
 #include "engine/geo/components/AABBColliderComponent.h"
 #include "engine/geo/singleton_components/CollisionComponent.h"
 #include "engine/geo/util/CollisionUtil.h"
+#include "platform/IWindow.h"
 
 namespace app
 {
@@ -51,6 +52,11 @@ namespace app
                 if (transform.parent)
                 {
                     math::Vec3 worldPos = math::Vec3{ transform.worldTransform[3].x, transform.worldTransform[3].y, transform.worldTransform[3].z };
+                    if (worldPos == std::numeric_limits<float>::max())
+                    {
+                        continue;
+                    }
+
                     math::Vec3 mouseWorldPos = math::util::ScreenToWorldPoint(mousePos
                                                           , camera->pos
                                                           , camera->view

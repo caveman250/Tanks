@@ -29,7 +29,7 @@
         {
             "AABBColliderComponent": {
                 "aabb": "Object",
-                "collisionChannel": "String",
+                "collisionChannel": "Object",
                 "dynamic": "bool",
                 "onCollisionEnter": "Object"
             }
@@ -56,6 +56,11 @@
             "SignalHandle": {
                 "functionName": "String",
                 "systemName": "String"
+            }
+        },
+        {
+            "CollisionChannel": {
+                "channel": "String"
             }
         },
         {
@@ -154,7 +159,11 @@
                                                 }
                                             }
                                         },
-                                        "collisionChannel": "Player"
+                                        "collisionChannel": {
+                                            "CollisionChannel": {
+                                                "channel": "Player"
+                                            }
+                                        }
                                     }
                                 },
                                 {

@@ -48,7 +48,7 @@
             }
         },
         {
-            "Signal<Id>": {
+            "Signal<Id, Id>": {
                 "m_RegisteredHandles": "Array"
             }
         },
@@ -99,6 +99,11 @@
                 "rot": "Object",
                 "scale": "Object"
             }
+        },
+        {
+            "HealthComponent": {
+                "health": "Float"
+            }
         }
     ],
     "root": {
@@ -144,7 +149,7 @@
                                         },
                                         "dynamic": true,
                                         "onCollisionEnter": {
-                                            "Signal<Id>": {
+                                            "Signal<Id, Id>": {
                                                 "m_RegisteredHandles": {
                                                     "struct": "SignalHandle",
                                                     "contents": null
@@ -208,6 +213,11 @@
                                                 "z": 1.0
                                             }
                                         }
+                                    }
+                                },
+                                {
+                                    "HealthComponent": {
+                                        "health": 100.0
                                     }
                                 }
                             ]

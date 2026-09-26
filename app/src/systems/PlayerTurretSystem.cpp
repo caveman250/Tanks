@@ -8,6 +8,7 @@
 #include "engine/input/InputUtil.h"
 #include "engine/ui/Rect.h"
 #include "components/BulletComponent.h"
+#include "components/HealthComponent.h"
 #include "engine/ecs/Signal.h"
 #include "engine/geo/components/AABBColliderComponent.h"
 #include "engine/geo/singleton_components/CollisionComponent.h"
@@ -95,9 +96,15 @@ namespace app
                             {
                                 bullet->velocity = forward;
 
-                                aabb->onCollisionEnter.Subscribe([](ecs::Id bullet)
+                                aabb->onCollisionEnter.Subscribe([](ecs::Id bullet, ecs::Id other)
                                 {
-                                    Application::Get()->GetWorld()->DestroyEntity(bullet);
+                                    auto* world = Application::Get()->GetWorld();
+                                    world->DestroyEntity(bullet);
+                                    if (world->HasComponent<HealthComponent>(other))
+                                    {
+                                        auto* health = world->GetComponent<HealthComponent>(other);
+                                        health->health -= 20;
+                                    }
                                 });
 
                             };
